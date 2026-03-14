@@ -321,13 +321,17 @@
     }
     .doc-link {
       display: inline-block;
-      padding: 6px 10px;
-      border-radius: 8px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--accent);
+      text-decoration: none;
+      background: rgba(255,255,255,0.05);
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s ease;
     }
 
     .doc-link:hover {
+      background: rgba(255,255,255,0.1);
       text-decoration: underline;
     }
 
@@ -377,4 +381,42 @@
   transform: translateY(-3px);
   border-color: rgba(124,156,255,0.4);
   background: rgba(255,255,255,0.1);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--text);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--accent);
 }
