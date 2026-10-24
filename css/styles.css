@@ -221,7 +221,7 @@
     .interest-grid { grid-template-columns: repeat(3, 1fr); }
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
     .rec-grid { grid-template-columns: repeat(2, 1fr); }
-    .cert-grid { grid-template-columns: repeat(3, 1fr); }
+    .cert-grid { grid-template-columns: repeat(2, 1fr); }
 
     .interest-card,
     .project-card,
@@ -361,8 +361,9 @@
   background-color: var(--bg);
   padding: 20px;
   border-radius: var(--radius);
-  max-width: 90%;
-  max-height: 90%;
+  width: 90%;
+  max-width: 700px;
+  max-height: 85%;
   overflow: auto;
   position: relative;
 }

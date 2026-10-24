@@ -229,6 +229,13 @@
     <h2 class="section-title">Certifications</h2>
     <div class="cert-grid">
       <article class="project-card">
+        <h3>SnowPro Core Certification</h3>
+        <p>Snowflake certification validating core knowledge of the Snowflake AI Data Cloud, including architecture, data loading and unloading, performance and cost optimization, security, and data sharing. Issued October 2026, valid through October 2028.</p>
+        <div class="project-links">
+          <button onclick="openModal('images/snowpro.png')" class="btn btn-doc">View Certificate</button>
+        </div>
+      </article>
+      <article class="project-card">
         <h3>AWS Certified Cloud Practitioner</h3>
         <p>Amazon Web Services foundational certification covering cloud architecture, services, and security.</p>
         <div class="project-links">
@@ -362,7 +369,7 @@
       const modal = document.getElementById('modal');
       const modalBody = document.getElementById('modal-body');
       if (src.endsWith('.pdf')) {
-        modalBody.innerHTML = `<iframe src="${src}" width="100%" height="500px" style="border: none;"></iframe>`;
+        modalBody.innerHTML = `<iframe src="${src}" width="100%" height="420px" style="border: none;"></iframe>`;
       } else {
         modalBody.innerHTML = `<img src="${src}" style="max-width: 100%; height: auto;" alt="Recommendation">`;
       }
